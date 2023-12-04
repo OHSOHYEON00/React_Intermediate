@@ -1,6 +1,12 @@
+import Main from "pages/Main/Main";
+import Header from "pages/components/Header";
 import React from "react";
-import Main from "ui/pages/Main";
 
 export default function App() {
-  return <Main />;
+  return (
+    <div>
+      <Main />
+      <Header />
+    </div>
+  );
 }

@@ -16,10 +16,6 @@ const devConfig = merge(commonConfig, {
     ],
   },
   devServer: {
-    static: {
-      directory: path.join(__dirname, "dist"),
-    },
-    publicPath: "/", // This allows you to specify the base path for all the assets within your application.
     historyApiFallback: true, // will redirect 404s to /index.html.
     hot: true,
     // open: true,
