@@ -8,12 +8,7 @@ const devConfig = merge(commonConfig, {
   mode: "development",
   devtool: "inline-source-map",
   module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-    ],
+    rules: [],
   },
   devServer: {
     historyApiFallback: true, // will redirect 404s to /index.html.

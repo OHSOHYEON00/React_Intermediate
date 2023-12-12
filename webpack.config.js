@@ -28,6 +28,10 @@ module.exports = {
           filename: "fonts/[hash][ext][query]",
         },
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader", "postcss-loader"],
+      },
     ],
   },
   resolve: {

@@ -6,12 +6,7 @@ const commonConfig = require("../webpack.config.js");
 const devConfig = merge(commonConfig, {
   mode: "production",
   module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-    ],
+    rules: [],
   },
   plugins: [
     new MiniCssExtractPlugin({

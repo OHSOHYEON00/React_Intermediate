@@ -1,15 +1,17 @@
 import React from "react";
-import TodoList from "./TodoList";
-import Header from "pages/components/Header";
+import Body from "./Body";
+import Header from "pages/Main/Header";
 import Input from "pages/components/Input";
 
 const Main = () => {
   return (
-    <section>
-      <Header />
-      <TodoList />
+    <div className="">
+      <section>
+        <Header />
+        <Body />
+      </section>
       <Input />
-    </section>
+    </div>
   );
 };
 
