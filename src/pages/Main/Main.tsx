@@ -10,7 +10,7 @@ const Main = () => {
         <Header />
         <Body />
       </section>
-      <Input />
+      <Input placeholder="New Note" />
     </div>
   );
 };

@@ -1,7 +1,14 @@
 import React from "react";
 
-const Input = () => {
-  return <div>input</div>;
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+
+const Input = ({ className = "", ...props }: InputProps) => {
+  return (
+    <input
+      className={`bg-button-bg text-basic-white px-5 py-4 rounded-lg w-full ${className}`}
+      {...props}
+    />
+  );
 };
 
 export default Input;
