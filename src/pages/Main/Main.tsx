@@ -1,7 +1,7 @@
 import React from "react";
 import Body from "./Body";
 import Header from "pages/Main/Header";
-import Input from "pages/components/Input";
+import NewNoteBox from "./NewNoteBox";
 
 const Main = () => {
   return (
@@ -10,7 +10,7 @@ const Main = () => {
         <Header />
         <Body />
       </section>
-      <Input placeholder="New Note" />
+      <NewNoteBox />
     </div>
   );
 };
